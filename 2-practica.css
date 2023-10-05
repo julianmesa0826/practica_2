@@ -1,0 +1,136 @@
+/** estilos generales**/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #424941;
+    border-radius: 10px;
+
+    /* flexbox*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ /** inicio seccion encabezado **/
+header {
+    width: 100%;
+    background-color: #0044d8;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /**se utiliza esta opcion para que los elementos se ubiquen a sus extremos*/
+}
+/** fin seccion encabezado **/
+
+
+header #logo {
+    width: 80px;
+    height: 80px;
+    background-color: #dd2a56;
+    border-radius: 10px;
+
+    /** flexbox o centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+header nav{
+    width: 50%;
+    background-color: #385f99;
+    line-height: 3rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** inicio seccion principal o main*/
+
+main {
+    background-color: rgb(105, 206, 219);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px; /* el border radius nos sorve para redondear un poco los brodes de nuestro elemento*/
+    width: 70%;
+}
+
+/**empezamos a agarrar seccion por seccion para los fondos*/
+
+main section {
+
+    /* esta es la seccion de color que va atras de los articulos*/
+    background-color: #77857d;
+    margin: 0.5rem; 
+    padding: 1rem; /*el padding lo usamos para poder darle una margen dentro del elemento*/
+    border-radius: 10px;
+}
+
+main section article {
+    background-color: #0edbff;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%; /*le damos el 100 % del espacio a lo ancho del elemento*/
+}
+
+/*fin de seccion principal o main*/
+
+/*inicio seccion barra lateral*/
+aside {
+    background-color: yellow;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    width: 26%;
+}
+
+aside .widget {
+    background-color: #fd2e2e;
+    margin: 0.5rem;
+    border-radius: 10px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #04515f;
+    margin: 0.5rem;
+    line-height: 4rem;
+    border-radius: 10px;
+
+    /* flexbox*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+
